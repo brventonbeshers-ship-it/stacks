@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0533 0%, #2d1045 20%, #3a0d2e 40%, #2a0a1a 60%, #1a0533 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Animated background overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(253, 121, 168, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(232, 67, 147, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Progress bar shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.progress-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Vote button press animation */
+@keyframes vote-press {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.93); }
+  100% { transform: scale(1); }
+}
+
+.vote-btn:active {
+  animation: vote-press 0.2s ease-out;
+}
+
+/* Card hover glow */
+.poll-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.poll-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(108, 92, 231, 0.15),
+    0 0 30px rgba(253, 121, 168, 0.08);
+}
+
+/* Leaderboard row hover */
+.lb-row {
+  transition: all 0.2s ease;
+}
+.lb-row:hover {
+  background: rgba(108, 92, 231, 0.1);
+  transform: translateX(4px);
+}
+
+/* Text glow */
+.text-glow {
+  text-shadow: 0 0 20px rgba(108, 92, 231, 0.5), 0 0 40px rgba(253, 121, 168, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 10, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6C5CE7, #FD79A8);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #A29BFE, #FD79A8);
+}
