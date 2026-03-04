@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="talentapp:project_verification" content="52efd82ddf98a10c3ee30cfc6eb60d8ca1b675c458f09124c257a2d2a39973321130d87df903873fc2b4fe7fa437e4b154ab9d07155bb0ed0cb2f05829203eee" />
+      </head>
       <body className="min-h-screen text-white antialiased relative">
         <StacksProvider>{children}</StacksProvider>
       </body>
