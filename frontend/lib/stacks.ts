@@ -6,3 +6,9 @@ export const CONTRACT_ADDRESS = "SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM";
 export const CONTRACT_NAME = "vote-dapp-stacks";
 
 export const HIRO_API_BASE = "https://api.mainnet.hiro.so";
+
+
+export function shortenAddress(addr: string, head = 6, tail = 4): string {
+  if (!addr || addr.length < head + tail + 3) return addr;
+  return `${addr.slice(0, head)}…${addr.slice(-tail)}`;
+}
