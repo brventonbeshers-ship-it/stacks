@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionDuration: { 400: '400ms', 600: '600ms' },
       colors: {
         primary: "#6C5CE7",
         secondary: "#A29BFE",
