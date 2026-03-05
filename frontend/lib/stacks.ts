@@ -25,3 +25,8 @@ export function calcVotePercent(votes: number, total: number): number {
   if (total === 0) return 0;
   return Math.round((votes / total) * 100);
 }
+
+
+export function pluralize(n: number, word: string, plural?: string): string {
+  return `${n} ${n === 1 ? word : (plural ?? word + 's')}`;
+}
