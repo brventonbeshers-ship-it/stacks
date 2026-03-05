@@ -7,6 +7,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: { xs: '480px' },
+      transitionDuration: { 400: '400ms', 600: '600ms' },
       colors: {
         primary: "#6C5CE7",
         secondary: "#A29BFE",
