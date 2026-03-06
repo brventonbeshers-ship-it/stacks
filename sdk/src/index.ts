@@ -1,3 +1,4 @@
+import type { VoteBattleClient } from "./client";
 export { VoteBattleClient } from "./client";
 export {
   PollResults,
@@ -8,6 +9,4 @@ export {
   POLLS,
 } from "./types";
 
-
-export type VoteResult = Awaited<ReturnType<VoteBattleClient['getVote']>>;
-
+export type VoteResult = Awaited<ReturnType<VoteBattleClient['getPollResults']>>;
