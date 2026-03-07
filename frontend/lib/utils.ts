@@ -12,3 +12,5 @@ export function chunk<T>(arr: T[], size: number): T[][] {
   for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
   return out;
 }
+
+export const randomBetween = (min: number, max: number): number => Math.floor(Math.random() * (max - min + 1)) + min;
