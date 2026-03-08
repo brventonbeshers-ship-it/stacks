@@ -60,3 +60,8 @@ PRs welcome! Please open an issue first to discuss major changes.
 - Votes are finalized on-chain; no off-chain oracle required
 - Report issues via GitHub Issues
 <!-- tech-note: Frontend deployed on Vercel with automatic CI/CD. -->
+
+## License
+
+MIT © brventonbeshers
+
