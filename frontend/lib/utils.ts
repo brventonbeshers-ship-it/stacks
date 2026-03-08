@@ -28,3 +28,8 @@ export function debounce<T extends (...args: unknown[]) => void>(fn: T, ms = 300
   let timer: ReturnType<typeof setTimeout>;
   return ((...args: unknown[]) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); }) as T;
 }
+
+export function truncateText(text: string, maxLength: number, suffix = '...'): string {
+  if (text.length <= maxLength) return text;
+  return text.slice(0, maxLength - suffix.length) + suffix;
+}
