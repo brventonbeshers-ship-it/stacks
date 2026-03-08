@@ -1,3 +1,4 @@
+// updated: 2026-03-08
 import { StacksMainnet } from "@stacks/network";
 
 export const NETWORK = new StacksMainnet();

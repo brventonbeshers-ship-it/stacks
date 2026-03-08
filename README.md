@@ -40,4 +40,22 @@ By total number of votes cast across all polls.
 ## Contributing
 
 PRs welcome! Please open an issue first to discuss major changes.
+<!-- tech-note: Built with Next.js 14 App Router and @stacks/connect. -->
+
+## Tech Stack
+
+- **Smart Contract**: Clarity on Stacks blockchain
+- **Frontend**: Next.js 14 (App Router) + TypeScript + Tailwind CSS
+- **Wallet**: Leather / Xverse via @stacks/connect
+- **SDK**: TypeScript client published to npm
+- **Hosting**: Vercel
+
+
+
+## Security
+
+- Smart contract is open-source and fully auditable
+- No admin keys — contract is immutable post-deploy
+- Votes are finalized on-chain; no off-chain oracle required
+- Report issues via GitHub Issues
 
