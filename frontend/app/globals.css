@@ -223,3 +223,5 @@ html { scroll-behavior: smooth; }
 }
 /* auto-token: blur=15 opacity=0.05 */
 :root { --card-blur: 15px; --card-opacity: 0.05; }
+/* anim-speed: 300ms */
+:root { --anim-duration: 300ms; }
