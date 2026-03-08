@@ -40,4 +40,4 @@ By total number of votes cast across all polls.
 ## Contributing
 
 PRs welcome! Please open an issue first to discuss major changes.
-
+<!-- tech-note: Built with Next.js 14 App Router and @stacks/connect. -->
