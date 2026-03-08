@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/vote-battle-sdk?color=blueviolet) ![license](https://img.shields.io/badge/license-MIT-blue)
+
 
 
 ## Contract Details
