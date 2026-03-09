@@ -11,3 +11,7 @@ export {
 } from "./types";
 
 export type VoteResult = Awaited<ReturnType<VoteBattleClient['getPollResults']>>;
+
+
+export type VoterInfo = Awaited<ReturnType<VoteBattleClient['getVoterStats']>>;
+
