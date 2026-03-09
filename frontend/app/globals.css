@@ -340,3 +340,5 @@ html { scroll-behavior: smooth; }
   border: 1px solid rgba(168, 85, 247, 0.5);
   box-shadow: 0 0 8px rgba(168, 85, 247, 0.3), inset 0 0 8px rgba(168, 85, 247, 0.05);
 }
+/* auto-token: blur=13 opacity=0.06 */
+:root { --card-blur: 13px; --card-opacity: 0.06; }
