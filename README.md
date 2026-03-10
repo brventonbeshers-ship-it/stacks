@@ -84,7 +84,6 @@ NEXT_PUBLIC_NETWORK=mainnet
 - No admin keys — contract is immutable post-deploy
 - Votes are finalized on-chain; no off-chain oracle required
 - Report issues via GitHub Issues
-<!-- tech-note: Built with Next.js 14 App Router and @stacks/connect. -->
 
 ## Tech Stack
 
@@ -104,3 +103,14 @@ NEXT_PUBLIC_NETWORK=mainnet
 - [ ] Mobile-first redesign
 - [ ] Push notifications for battle end
 
+
+
+## Contract Details
+
+| Property | Value |
+|---|---|
+| Network | Stacks Mainnet |
+| Address | `SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM` |
+| Name | `vote-dapp-stacks` |
+| Explorer | [View on Hiro](https://explorer.hiro.so/address/SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM.vote-dapp-stacks?chain=mainnet) |
+<!-- tech-note: Frontend deployed on Vercel with automatic CI/CD. -->
