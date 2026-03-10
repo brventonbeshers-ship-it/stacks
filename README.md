@@ -113,4 +113,23 @@ NEXT_PUBLIC_NETWORK=mainnet
 | Address | `SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM` |
 | Name | `vote-dapp-stacks` |
 | Explorer | [View on Hiro](https://explorer.hiro.so/address/SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM.vote-dapp-stacks?chain=mainnet) |
-<!-- tech-note: Frontend deployed on Vercel with automatic CI/CD. -->
+
+## Contributing
+
+PRs welcome! Please open an issue first to discuss major changes.
+<!-- tech-note: Glassmorphism UI built with Tailwind CSS and custom animations. -->
+
+## FAQ
+
+**Q: How do I vote?**
+Connect your Leather or Xverse wallet and click Vote A or Vote B on any poll.
+
+**Q: Is voting free?**
+Only the Stacks network transaction fee (~0.001 STX).
+
+**Q: Can I change my vote?**
+No — votes are final once confirmed on-chain.
+
+**Q: How is the leaderboard calculated?**
+By total number of votes cast across all polls.
+
