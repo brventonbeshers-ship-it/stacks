@@ -496,3 +496,5 @@ html { scroll-behavior: smooth; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+/* auto-transition: 180ms */
+.transition-std { transition: all 180ms ease; }
