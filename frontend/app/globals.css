@@ -525,3 +525,50 @@ html { scroll-behavior: smooth; }
 }
 .animate-fade-in  { animation: fadeIn  0.4s ease-out; }
 .animate-slide-up { animation: slideUp 0.4s ease-out; }
+/* auto-transition: 200ms */
+.transition-std { transition: all 200ms ease; }
+
+/* ─── Card hover lift ─── */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(168, 85, 247, 0.2);
+}
+
+/* ─── Bounce in ─── */
+@keyframes bounce-in {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-bounce-in { animation: bounce-in 0.5s ease-out; }
+
+/* ─── Gradient border ─── */
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: #0f0f1a;
+}
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(236,72,153,0.6));
+  z-index: -1;
+}
+
+/* ─── Neon border ─── */
+.neon-border {
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.3), inset 0 0 8px rgba(168, 85, 247, 0.05);
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: #f5f3ff;
+}

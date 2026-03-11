@@ -131,4 +131,4 @@ No — votes are final once confirmed on-chain.
 
 **Q: How is the leaderboard calculated?**
 By total number of votes cast across all polls.
-<!-- tech-note: Built with Next.js 14 App Router and @stacks/connect. -->
+<!-- tech-note: Frontend deployed on Vercel with automatic CI/CD. -->
