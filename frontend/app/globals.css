@@ -525,3 +525,5 @@ html { scroll-behavior: smooth; }
 }
 .animate-fade-in  { animation: fadeIn  0.4s ease-out; }
 .animate-slide-up { animation: slideUp 0.4s ease-out; }
+/* auto-transition: 200ms */
+.transition-std { transition: all 200ms ease; }
