@@ -1,0 +1,22 @@
+{
+  "name": "vote-battle-sdk",
+  "version": "1.1.6",
+  "description": "TypeScript SDK for interacting with the Vote Battle smart contract on Stacks blockchain",
+  "main": "sdk/dist/index.js",
+  "types": "sdk/dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brventonbeshers-ship-it/vote-battle"
+  },
+  "keywords": [
+    "stacks",
+    "blockchain",
+    "voting",
+    "clarity",
+    "smart-contract",
+    "sdk",
+    "web3"
+  ],
+  "author": "brventonbeshers-ship-it",
+  "license": "MIT"
+}
