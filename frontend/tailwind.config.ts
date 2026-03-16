@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: { 60: '60', 70: '70', 80: '80' },
       fontSize: { '2xs': ['0.65rem', '1rem'] },
       screens: { xs: '480px' },
       transitionDuration: { 400: '400ms', 600: '600ms' },
