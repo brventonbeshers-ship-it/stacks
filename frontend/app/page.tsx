@@ -34,7 +34,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="text-lg text-gray-400 drop-shadow-lg">
-            20 battles. Your vote. On-chain forever.
+            20 polls. One vote. Stored on Stacks forever.
           </p>
         </div>
         <SearchBar value={search} onChange={setSearch} />
