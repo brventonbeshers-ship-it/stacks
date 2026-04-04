@@ -4,7 +4,7 @@ import { StacksProvider } from "@/hooks/useStacks";
 
 export const metadata: Metadata = {
   title: "Vote Battle — A vs B on Stacks",
-  description: "Pick your favorites in 20 on-chain battles powered by Stacks.",
+  description: "Vote in 20 head-to-head battles. Every vote stored on Stacks blockchain.",
 };
 
 export default function RootLayout({
