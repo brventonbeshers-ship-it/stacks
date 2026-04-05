@@ -1295,3 +1295,26 @@ html { scroll-behavior: smooth; }
 }
 .animate-fade-in  { animation: fadeIn  0.4s ease-out; }
 .animate-slide-up { animation: slideUp 0.4s ease-out; }
+
+/* ─── Glass card ─── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 1rem;
+}
+
+/* ─── Pulse border ─── */
+@keyframes pulseBorder {
+  0%, 100% { border-color: rgba(168,85,247,0.4); }
+  50%       { border-color: rgba(168,85,247,0.9); }
+}
+.pulse-border { animation: pulseBorder 2s ease-in-out infinite; }
+
+/* ─── Focus ring ─── */
+*:focus-visible {
+  outline: 2px solid rgba(168, 85, 247, 0.7);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
