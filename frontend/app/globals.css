@@ -21,7 +21,7 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.12) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, rgba(253, 121, 168, 0.12) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 80%, rgba(232, 67, 147, 0.1) 0%, transparent 50%);
   pointer-events: none;
@@ -1391,4 +1391,29 @@ html { scroll-behavior: smooth; }
   border-radius: inherit;
   background: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(236,72,153,0.6));
   z-index: -1;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in  { animation: fadeIn  0.4s ease-out; }
+.animate-slide-up { animation: slideUp 0.4s ease-out; }
+
+/* ─── Shimmer text ─── */
+@keyframes shimmer-text {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, #a855f7 0%, #ec4899 50%, #a855f7 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-text 3s linear infinite;
 }
