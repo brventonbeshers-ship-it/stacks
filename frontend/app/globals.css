@@ -1817,3 +1817,12 @@ html { scroll-behavior: smooth; }
 }
 
 /* marker-globals: 1775918565115 */
+
+/* ─── Glass card ─── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 1rem;
+}
