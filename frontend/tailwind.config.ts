@@ -81,3 +81,5 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+// marker-tailwind: 1775869835247
