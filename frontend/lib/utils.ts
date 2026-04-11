@@ -35,3 +35,5 @@ export function truncateText(text: string, maxLength: number, suffix = '...'): s
 }
 
 export const clamp = (n: number, min: number, max: number): number => Math.min(max, Math.max(min, n));
+
+// marker-utils: 1775869891298

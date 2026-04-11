@@ -51,3 +51,5 @@ export function timeAgo(date: Date): string {
 export function formatSTX(microStx: number): string {
   return (microStx / 1_000_000).toFixed(2) + ' STX';
 }
+
+// marker-stacks: 1775869882929
