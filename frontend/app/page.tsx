@@ -34,7 +34,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="text-lg text-gray-400 drop-shadow-lg">
-            Your vote matters. Stored forever on Stacks blockchain.
+            Vote on your favorites. Every vote is on-chain.
           </p>
         </div>
         <SearchBar value={search} onChange={setSearch} />
@@ -57,3 +57,5 @@ export default function Home() {
 // marker-page: 1776007582092
 
 // marker-page: 1776044782693
+
+// marker-page: 1776061251592
