@@ -27,11 +27,9 @@ jobs:
         run: npm install vote-battle-sdk --no-save
 
       - name: Verify SDK import
-        continue-on-error: true
         run: node -e "const sdk = require('vote-battle-sdk'); console.log('SDK loaded:', Object.keys(sdk));"
 
       - name: Quick functionality test
-        continue-on-error: true
         run: |
           node -e "
             const sdk = require('vote-battle-sdk');
@@ -61,7 +59,6 @@ jobs:
         run: npm install vote-battle-sdk --no-save
 
       - name: Cross-platform verification
-        continue-on-error: true
         run: node -e "const s = require('vote-battle-sdk'); console.log('Platform OK:', process.platform);"
 
   stress-test:
@@ -88,7 +85,6 @@ jobs:
           npm install vote-battle-sdk
 
       - name: Validate package
-        continue-on-error: true
         run: |
           cd /tmp/sdk-test-${{ matrix.run }}
           node -e "const pkg = require('vote-battle-sdk'); console.log('Run ${{ matrix.run }}: OK');"
