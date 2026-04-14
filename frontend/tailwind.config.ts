@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: { '2xs': ['0.65rem', '1rem'] },
       transitionDuration: { 400: '400ms', 600: '600ms' },
       screens: { xs: '480px' },
       transitionDuration: { 400: '400ms', 600: '600ms' },
@@ -56,3 +57,5 @@ export default config;
 // marker-tailwind: 1776082223479
 
 // marker-tailwind: 1776114236375
+
+// marker-tailwind: 1776141896155
