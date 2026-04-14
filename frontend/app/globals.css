@@ -2208,3 +2208,10 @@ html { scroll-behavior: smooth; }
   100% { transform: scale(1); opacity: 1; }
 }
 .animate-bounce-in { animation: bounce-in 0.5s ease-out; }
+
+/* ─── Focus ring ─── */
+*:focus-visible {
+  outline: 2px solid rgba(168, 85, 247, 0.7);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
