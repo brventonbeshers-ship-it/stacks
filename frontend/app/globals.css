@@ -2449,3 +2449,11 @@ html { scroll-behavior: smooth; }
   background: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(236,72,153,0.6));
   z-index: -1;
 }
+
+/* ─── Glow text ─── */
+.text-glow-purple {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
