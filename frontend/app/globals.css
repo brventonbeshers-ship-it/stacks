@@ -55,9 +55,9 @@ body::before {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .poll-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow:
-    0 20px 40px rgba(108, 92, 231, 0.3),
+    0 20px 40px rgba(108, 92, 231, 0.2),
     0 0 30px rgba(253, 121, 168, 0.08);
 }
 
@@ -2431,4 +2431,21 @@ html { scroll-behavior: smooth; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer-text 3s linear infinite;
+}
+
+/* marker-globals: 1776267771996 */
+
+/* ─── Gradient border ─── */
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: #0f0f1a;
+}
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(236,72,153,0.6));
+  z-index: -1;
 }
