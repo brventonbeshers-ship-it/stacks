@@ -5,7 +5,7 @@ import { StacksProvider } from "@/hooks/useStacks";
 export const metadata: Metadata = {
   metadataBase: new URL("https://vote-battle.vercel.app"),
   title: "Vote Battle - A vs B on Stacks",
-  description: "On-chain voting battles. 20 polls, permanent results on Stacks.",
+  description: "Pick your favorites in 20 on-chain battles powered by Stacks.",
 };
 
 export default function RootLayout({
