@@ -2493,3 +2493,9 @@ html { scroll-behavior: smooth; }
 }
 
 /* marker-globals: 1776313805770 */
+
+/* ─── Smooth scroll & motion ─── */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; }
+}
