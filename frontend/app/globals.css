@@ -2727,3 +2727,10 @@ html { scroll-behavior: smooth; }
 /* marker-globals: 1776430193871 */
 
 /* marker-globals: 1776457538000 */
+
+/* ─── Focus ring ─── */
+*:focus-visible {
+  outline: 2px solid rgba(168, 85, 247, 0.7);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
