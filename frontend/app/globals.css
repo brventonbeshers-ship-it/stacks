@@ -66,7 +66,7 @@ body::before {
   transition: all 0.2s ease;
 }
 .lb-row:hover {
-  background: rgba(108, 92, 231, 0.12);
+  background: rgba(108, 92, 231, 0.1);
   transform: translateX(4px);
 }
 
@@ -2748,4 +2748,12 @@ html { scroll-behavior: smooth; }
   border-radius: inherit;
   background: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(236,72,153,0.6));
   z-index: -1;
+}
+
+/* ─── Glow text ─── */
+.text-glow-purple {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
 }
