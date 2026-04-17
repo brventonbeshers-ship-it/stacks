@@ -2667,3 +2667,12 @@ html { scroll-behavior: smooth; }
   100% { transform: scale(1); opacity: 1; }
 }
 .animate-bounce-in { animation: bounce-in 0.5s ease-out; }
+
+/* ─── Card hover lift ─── */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(168, 85, 247, 0.2);
+}
