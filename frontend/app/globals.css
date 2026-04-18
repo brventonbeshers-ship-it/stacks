@@ -2954,3 +2954,8 @@ html { scroll-behavior: smooth; }
 }
 
 /* marker-globals: 1776547579113 */
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(168,85,247,0.4); border-radius: 3px; }
