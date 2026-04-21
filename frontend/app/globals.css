@@ -3207,3 +3207,9 @@ html { scroll-behavior: smooth; }
   -webkit-text-fill-color: transparent;
   animation: shimmer-text 3s linear infinite;
 }
+
+/* ─── Smooth scroll & motion ─── */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; }
+}
