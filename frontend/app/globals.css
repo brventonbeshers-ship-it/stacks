@@ -3169,3 +3169,11 @@ html { scroll-behavior: smooth; }
 }
 
 /* marker-globals: 1776699157423 */
+
+/* ─── Glow text ─── */
+.text-glow-purple {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
