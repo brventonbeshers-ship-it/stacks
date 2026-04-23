@@ -3625,3 +3625,9 @@ html { scroll-behavior: smooth; }
 .text-glow-pink {
   text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
 }
+
+/* ─── Neon border ─── */
+.neon-border {
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.3), inset 0 0 8px rgba(168, 85, 247, 0.05);
+}
