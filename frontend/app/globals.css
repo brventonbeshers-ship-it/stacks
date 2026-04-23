@@ -55,9 +55,9 @@ body::before {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .poll-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
   box-shadow:
-    0 20px 40px rgba(108, 92, 231, 0.2),
+    0 20px 40px rgba(108, 92, 231, 0.3),
     0 0 30px rgba(253, 121, 168, 0.08);
 }
 
@@ -3582,3 +3582,10 @@ html { scroll-behavior: smooth; }
   100% { transform: scale(1); opacity: 1; }
 }
 .animate-bounce-in { animation: bounce-in 0.5s ease-out; }
+
+/* ─── Fade up ─── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.4s ease-out both; }
