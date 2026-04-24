@@ -66,7 +66,7 @@ body::before {
   transition: all 0.2s ease;
 }
 .lb-row:hover {
-  background: rgba(108, 92, 231, 0.08);
+  background: rgba(108, 92, 231, 0.1);
   transform: translateX(4px);
 }
 
@@ -3773,4 +3773,10 @@ html { scroll-behavior: smooth; }
   outline: 2px solid rgba(168, 85, 247, 0.7);
   outline-offset: 2px;
   border-radius: 6px;
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: #f5f3ff;
 }
