@@ -3699,3 +3699,9 @@ html { scroll-behavior: smooth; }
 }
 
 /* marker-globals: 1777022643293 */
+
+/* ─── Selection ─── */
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: #f5f3ff;
+}
