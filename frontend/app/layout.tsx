@@ -5,7 +5,7 @@ import { StacksProvider } from "@/hooks/useStacks";
 export const metadata: Metadata = {
   metadataBase: new URL("https://vote-battle.vercel.app"),
   title: "Vote Battle - A vs B on Stacks",
-  description: "On-chain voting battles. 20 polls, permanent results on Stacks.",
+  description: "Pick your favorites in 20 on-chain battles powered by Stacks.",
 };
 
 export default function RootLayout({
@@ -97,3 +97,5 @@ export default function RootLayout({
 // marker-layout: 1777034676661
 
 // marker-layout: 1777059865965
+
+// marker-layout: 1777064095029
