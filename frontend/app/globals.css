@@ -55,9 +55,9 @@ body::before {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .poll-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow:
-    0 20px 40px rgba(108, 92, 231, 0.3),
+    0 20px 40px rgba(108, 92, 231, 0.2),
     0 0 30px rgba(253, 121, 168, 0.08);
 }
 
@@ -3676,3 +3676,15 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; }
 }
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(168,85,247,0.4); border-radius: 3px; }
+
+/* ─── Pulse border ─── */
+@keyframes pulseBorder {
+  0%, 100% { border-color: rgba(168,85,247,0.4); }
+  50%       { border-color: rgba(168,85,247,0.9); }
+}
+.pulse-border { animation: pulseBorder 2s ease-in-out infinite; }
