@@ -1,4 +1,4 @@
-// sdk-rev: 66
+// sdk-rev: 67
 import type { VoteBattleClient } from "./client";
 export { VoteBattleClient } from "./client";
 export {
