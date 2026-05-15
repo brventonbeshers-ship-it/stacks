@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: { xs: '480px' },
       zIndex: { 60: '60', 70: '70', 80: '80' },
       fontSize: { '2xs': ['0.65rem', '1rem'] },
       zIndex: { 60: '60', 70: '70', 80: '80' },
@@ -188,3 +189,5 @@ export default config;
 // marker-tailwind: 1777610858449
 
 // marker-tailwind: 1777697478203
+
+// marker-tailwind: 1778857611489
